@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:rowCount="10"
+    android:columnCount="12"
+    android:orientation="vertical"
+    android:id="@+id/gridLayout"
+    android:background="#b526f7">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/events"
+        android:layout_row="3"
+        android:layout_column="8"
+        android:layout_margin="20dp"
+        android:layout_gravity="top|left"
+        android:onClick="goto_home"
+        android:background="@drawable/event_list" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/leader"
+        android:layout_row="3"
+        android:layout_column="11"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goto_leader"
+        android:background="@drawable/profile"/>
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/settings"
+        android:layout_row="6"
+        android:layout_column="8"
+        android:layout_margin="20dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/challenge"
+        android:onClick="goto_challenge"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/exit"
+        android:layout_row="6"
+        android:layout_column="11"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/settings"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/fanfeed"
+        android:layout_row="5"
+        android:layout_column="8"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/fanfeed"
+        android:onClick="goto_fanfeed"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/availability"
+        android:layout_row="5"
+        android:layout_column="11"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mywall"
+        android:onClick="goto_userprofile"/>
+</GridLayout>
